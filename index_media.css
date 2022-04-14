@@ -1,0 +1,7 @@
+@media screen and (min-width: 800px) {
+    .container-characters {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
