@@ -53,6 +53,7 @@ body {
 
 .box-character {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     width: 30vh;
@@ -61,4 +62,18 @@ body {
     background-color: #e0dbd6;
     border-color: #C09D73;
     border-radius: 10px;
+}
+
+.character-img {
+    width: 50%;
+    height: 50%;
+}
+
+.box-character p {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-top: 1em;
+}
+
+.box-character:hover {
+    transform: scale(1.1, 1.1);
 }
