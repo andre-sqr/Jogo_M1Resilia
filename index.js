@@ -10,12 +10,15 @@ function characterChoice() {
         if (character.toLowerCase() === 'a') {
             alert('Você decidiu jogar com John, o xerife')
             location.href = './html/john/sheriffPhase1.html'
+            break
         } else if (character.toLowerCase() === 'b') {
             alert('Você decidiu jogar com William, o bandido') 
-            location.href = './html/william/banditPhase1.html'       
+            location.href = './html/william/banditPhase1.html' 
+            break      
         } else if (character.toLowerCase() === 'c') {
             alert('Você decidiu jogar com Florence, a fundadora')
             location.href = './html/florence/civilianPhase1.html'
+            break
         } else {
             alert('Resposta inválida. Tente novamente')
         }
