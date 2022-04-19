@@ -8,14 +8,14 @@ function phaseOneChoice() {
         C) Fugir pela porta da frente`)
         
         if (answer.toLowerCase() === 'a') {
-            alert('Um aprendiz de xerife estava dormindo na viela. Você acorda ele e é preso.')
+            alert('GAME OVER - Um aprendiz de xerife estava dormindo na viela. Você acorda ele e é preso.')
             location.href = '../../index.html' 
             break
         } else if (answer.toLowerCase() === 'b') { 
             location.href = 'banditPhase2.html' 
             break      
         } else if (answer.toLowerCase() === 'c') {
-            alert('Uma pessoa te vê com o saco de dinheiro e atira. Você morre na hora.')
+            alert('GAME OVER - Uma pessoa te vê com o saco de dinheiro e atira. Você morre na hora.')
             location.href = '../../index.html'
             break
         } else {
