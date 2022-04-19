@@ -48,6 +48,32 @@ function phaseTwoChoice() {
     }
 }
 
+function phaseThreeChoice() {
+    while (answer != 'a' || 'b' || 'c') {
+        var answer = prompt(`Qual a sua escolha?
+        Digite a letra da opção desejada
+        
+        A) O hotel da cidade
+        B) A ferrovia abandonada
+        C) Uma casa abandonada nos limites da cidade`)
+        
+        if (answer.toLowerCase() === 'a') {
+            alert('A gangue do saqueador da taverna te encurrala e te mata na recepção')
+            location.href = '../../index.html' 
+            break
+        } else if (answer.toLowerCase() === 'b') { 
+            alert('Não tem nada lá, mas um grupo de caçadores de recompensa te sequestram na hora de voltar para a cidade')
+            location.href = '../../index.html' 
+            break      
+        } else if (answer.toLowerCase() === 'c') {
+            location.href = 'sheriffPhase4.html'
+            break
+        } else {
+            alert('Resposta inválida. Tente novamente')
+        }
+    }
+}
+
 // GAME OVER
 
 function goBack() {
