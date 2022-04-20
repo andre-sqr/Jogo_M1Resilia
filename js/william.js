@@ -1,21 +1,17 @@
-function phaseOneChoice() {
+function makeChoice(text, rightAnswer, wrongAnswer1, alert1, wrongAnswer2, alert2, link) {
     while (answer != 'a' || 'b' || 'c') {
-        var answer = prompt(`Qual a sua escolha?
-        Digite a letra da opção desejada
+        var answer = prompt(`Qual a sua escolha? \n Digite a letra da opção desejada
+        \n ${text}`)
         
-        A) Sair pela viela de trás do comércio
-        B) Fugir pela janela
-        C) Fugir pela porta da frente`)
-        
-        if (answer.toLowerCase() === 'a') {
-            alert('GAME OVER - Um aprendiz de xerife estava dormindo na viela. Você acorda ele e é preso.')
+        if (answer.toLowerCase() === wrongAnswer1) {
+            alert(alert1)
             location.href = '../../index.html' 
             break
-        } else if (answer.toLowerCase() === 'b') { 
-            location.href = 'banditPhase2.html' 
+        } else if (answer.toLowerCase() === rightAnswer) { 
+            location.href = link 
             break      
-        } else if (answer.toLowerCase() === 'c') {
-            alert('GAME OVER - Uma pessoa te vê com o saco de dinheiro e atira. Você morre na hora.')
+        } else if (answer.toLowerCase() === wrongAnswer2) {
+            alert(alert2)
             location.href = '../../index.html'
             break
         } else {
