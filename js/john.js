@@ -1,23 +1,19 @@
 // ESCOLHAS
 
-function phaseOneChoice() {
+function makeChoice(text, rightAnswer, wrongAnswer1, alert1, wrongAnswer2, alert2, link) {
     while (answer != 'a' || 'b' || 'c') {
-        var answer = prompt(`Qual a sua escolha?
-        Digite a letra da opção desejada
+        var answer = prompt(`Qual a sua escolha? \n Digite a letra da opção desejada
+        \n ${text}`)
         
-        A) Avista um hotel para ficar e vai até ele
-        B) Dorme na viela do bar
-        C) Encontra uma senhorinha que te oferece uma cama`)
-        
-        if (answer.toLowerCase() === 'a') {
-            alert('GAME OVER - O hotel era controlado por uma gangue mafiosa da cidade. Olham o seu distintivo policial no momento que você chega. Te matam enquanto você dorme.')
+        if (answer.toLowerCase() === wrongAnswer1) {
+            alert(alert1)
             location.href = '../../index.html' 
             break
-        } else if (answer.toLowerCase() === 'b') { 
-            location.href = 'sheriffPhase2.html' 
+        } else if (answer.toLowerCase() === rightAnswer) { 
+            location.href = link 
             break      
-        } else if (answer.toLowerCase() === 'c') {
-            alert('GAME OVER - A senhorinha era um bandido disfarçado. Ele joga veneno no seu mingau e é insistente para que você coma de bom grado. Como John sempre acredita em senhorinhas, ele come e morre.')
+        } else if (answer.toLowerCase() === wrongAnswer2) {
+            alert(alert2)
             location.href = '../../index.html'
             break
         } else {
@@ -26,50 +22,20 @@ function phaseOneChoice() {
     }
 }
 
-function phaseTwoChoice() {
+function makeChoiceTwoLinks(text, rightAnswer, wrongAnswer1, gameoverlink, wrongAnswer2, link, message) {
     while (answer != 'a' || 'b' || 'c') {
-        var answer = prompt(`Qual a sua escolha?
-        Digite a letra da opção desejada
+        var answer = prompt(`Qual a sua escolha? \n Digite a letra da opção desejada
+        \n ${text}`)
         
-        A) Florence
-        B) James
-        C) Começar uma meditação e buscar as respostas em si mesmo`)
-        
-        if (answer.toLowerCase() === 'a') {
-            location.href = 'sheriffPhase3.html' 
+        if (answer.toLowerCase() === wrongAnswer1) {
+            location.href = gameoverlink
             break
-        } else if (answer.toLowerCase() === 'b') { 
-            location.href = 'sheriffGameOver201.html' 
+        } else if (answer.toLowerCase() === rightAnswer) { 
+            location.href = link 
             break      
-        } else if (answer.toLowerCase() === 'c') {
-            alert('GAME OVER - John senta de pernas cruzadas e começa a contar mentalmente suas respirações e expirações, sentindo o peito encher e esvaziar de ar. A meditação sempre trouxe clareza para ele em momentos de confusão. No entanto, John se concentra de maneira tão intensa que alguns anos se passam antes dele abrir os olhos novamente.')
+        } else if (answer.toLowerCase() === wrongAnswer2) {
+            alert(message)
             location.href = '../../index.html'
-            break
-        } else {
-            alert('Resposta inválida. Tente novamente')
-        }
-    }
-}
-
-function phaseThreeChoice() {
-    while (answer != 'a' || 'b' || 'c') {
-        var answer = prompt(`Qual a sua escolha?
-        Digite a letra da opção desejada
-        
-        A) O hotel da cidade
-        B) A ferrovia abandonada
-        C) Uma casa abandonada nos limites da cidade`)
-        
-        if (answer.toLowerCase() === 'a') {
-            alert('GAME OVER - A gangue do saqueador da taverna te encurrala e te mata na recepção')
-            location.href = '../../index.html' 
-            break
-        } else if (answer.toLowerCase() === 'b') { 
-            alert('GAME OVER - Não tem nada lá, mas um grupo de caçadores de recompensa te sequestram na hora de voltar para a cidade')
-            location.href = '../../index.html' 
-            break      
-        } else if (answer.toLowerCase() === 'c') {
-            location.href = 'sheriffPhase4.html'
             break
         } else {
             alert('Resposta inválida. Tente novamente')
