@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/phases_style.css">
+    <link rel="stylesheet" href="../../css/container_media.css">
+</head>
+<body>
+    <header>
+        <h1>Crimefield</h1>
+
+        <button class="home-button">
+            <a href="../../index.html">INÍCIO</a>
+        </button>
+    </header>
+
+    <div id="container-father">
+    <section class="container-1">
+        <h2>FLORENCE</h2>
+
+        <p class="text-p">
+            O xerife, John, é um novato carismático na cidade. Parecia demonstrar empatia pela situação que te ocorrera. Ele gesticula com a mão, sem aliança, enquanto se disponibiliza para ajudar.
+        </p>
+        <p class="text-p">
+            Ele pede informações. Florence fica com um certo receio, afinal, nunca se sabe quem é confiável em Crimefield. O que você faz?
+        </p>
+        <p class="text-choices">
+            <strong>A)</strong> Indica locais famosos por ter gangues
+            <br>
+            <strong>B)</strong> Não diz o que pensa por medo, e indica que peça ajuda para o departamento policial da cidade
+            <br>
+        </p>
+
+        <button onclick="makeChoiceAB('A) Indica locais famosos por ter gangues \n B) Não diz o que pensa por medo, e indica que peça ajuda para o departamento policial da cidade', 'a', 'b', 'GAME OVER - O departamento policial é corrupto e não ajuda John. Ele morre e você tem o seu bar saqueado outras vezes', 'civilianPhase3.html')">ESCOLHER</button>
+    </section>
+    </div>
+<script src="../../js/florence.js"></script>
+</body>
+</html>
