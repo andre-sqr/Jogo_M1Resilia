@@ -19,3 +19,7 @@ function makeChoice(text, rightAnswer, wrongAnswer1, alert1, wrongAnswer2, alert
         }
     }
 }
+
+function goBack() {
+    location.href = '../../index.html'
+}
