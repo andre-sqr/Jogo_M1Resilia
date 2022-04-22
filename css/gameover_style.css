@@ -66,6 +66,8 @@ header .home-button:hover {
 .container-1 p {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin-top: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .container-1 .game-over {
