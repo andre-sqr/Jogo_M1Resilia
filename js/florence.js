@@ -37,3 +37,7 @@ function makeChoiceAB (text, rightAnswer, wrongAnswer, alert1, link) {
         }
     }
 }
+
+function goBack() {
+    location.href = '../../index.html'
+}
